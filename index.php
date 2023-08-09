@@ -28,7 +28,7 @@ if (isset($_POST["submit"])) {
 
    $dbhost = 'localhost';
    $dbuser = 'root';
-   $dbpass = '';
+   $dbpass = getenv('DB_PASS');
    $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 
    if(! $conn ) {
@@ -43,7 +43,7 @@ if (isset($_POST["submit"])) {
 if (isset($_POST["submit1"])) {
    $dbhost = 'localhost';
    $dbuser = 'root';
-   $dbpass = '';
+   $dbpass = getenv('DB_PASS');
    $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 
    if ($conn) {

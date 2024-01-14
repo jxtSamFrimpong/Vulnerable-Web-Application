@@ -18,5 +18,5 @@ steps:
     echo See https://aka.ms/yaml
 - task: CmdLine@2
   inputs:
-    script: 'sleep 90'
+    script: 'sleep 300'
   displayName: 'Run a multi-line script'
